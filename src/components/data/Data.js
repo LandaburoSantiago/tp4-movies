@@ -7,7 +7,7 @@ const Data = ({data, title, selector}) => {
             <br></br>
             <br></br>
             <br></br>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <div className="movies" >
                 <article className="movie">
                 <>
