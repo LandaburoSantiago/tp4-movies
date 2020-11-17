@@ -1,0 +1,92 @@
+
+.gird-movies{
+    display: grid;
+    justify-content: center;
+
+    margin-bottom: 70px;
+  }
+
+.movies{
+    padding: 0px;
+    width: 100%;
+    grid-gap: 1rem;
+    display: grid;
+
+    object-fit: cover;
+    width: 100%;
+    margin: 0, auto;
+}
+
+.gird-movies h3{
+    color: rgb(214, 214, 214);
+    padding: 5px;
+}
+
+.movie {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    grid-row-gap: 1.5em;
+    display: grid;
+}
+
+.movie .card{
+    border: none;
+    box-shadow: 6px 4px 15px rgb(65, 64, 64);
+}
+
+.movie .card-body{
+    position: absolute;
+    bottom: 0px ;
+    width: 100%;
+    color: #eaeaea;
+    background: -webkit-linear-gradient(to top, #0f8b8d, #0e0d0d38); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0f8b8d, #0a0a0a8a);
+    border: none;
+  }
+
+
+  .movie .card-body p{
+    font-weight: bold;
+    color: rgb(3, 212, 83);
+  }
+  .movie .card-body button{
+    border-radius: 100%;
+    transition: all 0.3s ease-in;
+    width: 45px;
+    height: 45px;
+    border-width: 3px;
+    border-color: rgb(255, 243, 227);
+    background-color: transparent;
+  }
+  .movie .card-body button:focus{
+    box-shadow: none;
+    width: 45px;
+    height: 45px;
+    border-color: rgb(255, 243, 227);
+    background-color: transparent;
+  }
+  .movie .card-body button:hover{
+    transition: all 0.3s ease-in;
+    width: 55px;
+    height: 55px;
+    font-size: 23px;
+    border-color: rgb(255, 243, 227);
+    background-color: transparent
+  }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .movie{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .movie{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    .movie{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
